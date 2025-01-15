@@ -1,5 +1,4 @@
-function mincost(arr)
-{ 
+function mincost(arr){ 
 //write your code here
 // return the min cost
   if(arr.length <= 1){
@@ -14,7 +13,7 @@ function mincost(arr)
 	while(minHeap.size() > 1){
 		const rope1 = minHeap.extractMin();
 		const rope2 = minHeap.extractMin();
-		totalCost+=rope1+rope2;
+		totalCost += rope1+rope2;
 		minHeap.insert(rope1+rope2);
 	}
 	return totalCost;
